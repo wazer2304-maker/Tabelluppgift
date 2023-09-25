@@ -1,16 +1,12 @@
 main {
 	display: grid;
-	grid-template-columns: 1;
-	grid-template-rows: 2;
 	height: 100%;
 	width: 100%;
 	grid-auto-rows: 400px;
-	grid-template-areas: color, processor;
 }
 
 .color {
 	justify-self: center;
-	grid-area: "color";
 	width: 500px;
 	height: 365px;
 	border: 1px solid black;
@@ -23,7 +19,6 @@ main {
 
 .processor {
 	justify-self: center;
-	grid-area: "processor";
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	width: 600px;
