@@ -1,15 +1,13 @@
 main {
 	display: grid;
-	height: 100%;
-	width: 100%;
-	grid-auto-rows: 400px;
+	padding-top: 40px;
+	grid-auto-rows: 220px;
 }
 
 .color {
 	justify-self: center;
-	width: 500px;
-	height: 365px;
-	border: 1px solid black;
+	width: 600px;
+	height: 360px;
 	border-collapse: collapse;
 }
 
@@ -23,54 +21,56 @@ main {
 	font-size: 15px;
 	width: 600px;
 	height: 150px;
-	border: 1px solid black;
 	border-collapse: collapse;
 }
 
-.processor thead td {
+.processor th {
 	background-color: rgba(219, 216, 216, 0.897);
 }
 
-.processor td {
+.processor td,
+.processor th {
 	padding: 7px;
 	width: 100px;
 	border: 1px solid black;
 	text-align: center;
 }
 
-.processor td:nth-child(1) {
+.processor td:nth-child(1),
+.processor th:nth-child(1) {
 	text-align: left;
 }
 
-.processor td:nth-child(4) {
+.processor td:nth-child(4),
+.processor th:nth-child(4) {
 	text-align: right;
 }
 
 .processor tbody tr:nth-child(even) {
-	background-color: red;
+	background-color: rgba(187, 4, 4, 0.863);
 	color: rgb(190, 207, 214);
 }
 
 .processor tbody tr:nth-child(odd) {
-	background-color: #eeca00;
+	background-color: #f34500ce;
 }
 
-.red {
+.color tr:nth-child(1) td:nth-child(2) {
 	background-color: red;
 }
 
-.lime {
+.color tr:nth-child(3) td:nth-child(1) {
 	background-color: lime;
 }
 
-.cornflowerblue {
+.color tr:nth-child(1) td:nth-child(1) {
 	background-color: cornflowerblue;
 }
 
-.black {
+.color tr:nth-child(2) td:nth-child(2) {
 	background-color: black;
 }
 
-.yellow {
+.color tr:nth-child(2) td:nth-child(1) {
 	background-color: yellow;
 }
