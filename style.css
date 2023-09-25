@@ -1,0 +1,81 @@
+main {
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: 2;
+	height: 100%;
+	width: 100%;
+	grid-auto-rows: 400px;
+	grid-template-areas: color, processor;
+}
+
+.color {
+	justify-self: center;
+	grid-area: "color";
+	width: 500px;
+	height: 365px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.color td {
+	border: 1px solid black;
+}
+
+.processor {
+	justify-self: center;
+	grid-area: "processor";
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	width: 600px;
+	height: 150px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.processor thead td {
+	background-color: rgba(219, 216, 216, 0.897);
+}
+
+.processor td {
+	padding: 7px;
+	width: 100px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.processor td:nth-child(1) {
+	text-align: left;
+}
+
+.processor td:nth-child(4) {
+	text-align: right;
+}
+
+.processor tbody tr:nth-child(even) {
+	background-color: red;
+	color: rgb(190, 207, 214);
+}
+
+.processor tbody tr:nth-child(odd) {
+	background-color: #eeca00;
+}
+
+.red {
+	background-color: red;
+}
+
+.lime {
+	background-color: lime;
+}
+
+.cornflowerblue {
+	background-color: cornflowerblue;
+}
+
+.black {
+	background-color: black;
+}
+
+.yellow {
+	background-color: yellow;
+}
